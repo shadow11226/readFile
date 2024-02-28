@@ -2,7 +2,8 @@
 # so let's require it now.
 cmake_minimum_required(VERSION 3.20)
 project(main VERSION 0.1.0)
-add_executable(main ./main.cpp)
+add_executable(main main.cpp)
 
-# Tell compiler to use C++20 features. The code doesn't actually use any of them.
-#target_compile_features(cxx_std_20)
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDART 11)
+
